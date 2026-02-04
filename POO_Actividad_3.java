@@ -2,9 +2,31 @@ import java.util.Scanner;
 
 class Producto {
 
-    String descripcion;
-    double costo;
+    private String descripcion;
+    private double costo;
+    private double impuesto;
 
+    public void setDescripcion(String x) {
+        descripcion = x;
+    }
+
+    public void setCosto(double x) {
+        costo = x;
+    }
+
+    public void setImpuesto(double x) {
+        impuesto = x;
+    }
+
+    public String getDescripcion() {
+        return descripcion;
+    }
+
+    public double calcularPrecio(double utilidad) {
+
+        double base = costo + (costo * utilidad);
+        return base + (base * impuesto);
+    }
 }
 
 public class POO_Actividad_3 {
@@ -13,31 +35,36 @@ public class POO_Actividad_3 {
 
         Scanner sc = new Scanner(System.in);
 
-        //S-a REBISA TUS NOTAS
+        Producto a = new Producto();
+        Producto b = new Producto();
 
-        Producto p1 = new Producto();
-        Producto p2 = new Producto();
-
-        p1.descripcion = sc.nextLine();
+        a.setDescripcion(sc.nextLine());
 
         try {
-            p1.costo = Double.parseDouble(sc.nextLine());
+            a.setCosto(Double.parseDouble(sc.nextLine()));
         } catch (Exception e) {
-            p1.costo = 0;
+            a.setCosto(0);
         }
 
-        p2.descripcion = sc.nextLine();
+        a.setImpuesto(.16);
+
+        b.setDescripcion(sc.nextLine());
 
         try {
-            p2.costo = Double.parseDouble(sc.nextLine());
+            b.setCosto(Double.parseDouble(sc.nextLine()));
         } catch (Exception e) {
-            p2.costo = 0;
+            b.setCosto(0);
         }
 
-        if (p1.costo > p2.costo) {
-            System.out.println(p1.descripcion);
+        b.setImpuesto(.16);
+
+        double pa = a.calcularPrecio(.20);
+        double pb = b.calcularPrecio(.20);
+
+        if (pa > pb) {
+            System.out.println(a.getDescripcion());
         } else {
-            System.out.println(p2.descripcion);
+            System.out.println(b.getDescripcion());
         }
 
         sc.close();

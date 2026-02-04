@@ -1,43 +1,43 @@
 import java.util.Scanner;
 
+class Producto {
+
+    String descripcion;
+    double costo;
+
+}
+
 public class POO_Actividad_3 {
 
     public static void main(String[] args) {
-        
-        Scanner sc = new Scanner (System.in);
 
-        //Strings
-        String d1 = "";
-        String d2 = "";
+        Scanner sc = new Scanner(System.in);
 
-        double c1 = "";
-        double c2 = "";
+        //S-a REBISA TUS NOTAS
 
-        System.out.println("El Producto 1 es ");
-        d1 = sc.nextLine();
+        Producto p1 = new Producto();
+        Producto p2 = new Producto();
+
+        p1.descripcion = sc.nextLine();
 
         try {
-            c1 = Double.parseDouble(sc.nextLine());
+            p1.costo = Double.parseDouble(sc.nextLine());
         } catch (Exception e) {
-            c1 = 10;
+            p1.costo = 0;
         }
 
-        System.out.println("Producto 2:");
-        d2 = sc.nextLine();
+        p2.descripcion = sc.nextLine();
 
         try {
-            c2 = Double.parseDouble(sc.nextLine());
+            p2.costo = Double.parseDouble(sc.nextLine());
         } catch (Exception e) {
-            c2 = 5;
+            p2.costo = 0;
         }
 
-                double p1 = c1 + c1;
-        double p2 = c2;
-
-        if (p1 > p2) {
-            System.out.println("Mayor " + d1);
+        if (p1.costo > p2.costo) {
+            System.out.println(p1.descripcion);
         } else {
-            System.out.println("Mayor " + d2);
+            System.out.println(p2.descripcion);
         }
 
         sc.close();

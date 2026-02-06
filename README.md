@@ -47,7 +47,7 @@ Producto p1 = new Producto();
 ## ----------------------
 ## ----- Versión 3 ------
 ## ----------------------
-pasé los atributos a private
+Pasé los atributos a private
 
 Agregué setters y getter
 
@@ -78,3 +78,53 @@ p1.setCosto
 ## ----------------------
 ## ----- Versión 4 ------
 ## ----------------------
+Agregué nuevos atributos al producto y separé la comparación
+
+Añadí codigo y tipo
+
+Creé el método compararProductos
+
+=== Modifiqué: ===
+
+private String codigo;
+
+private String tipo;
+
+=== Por: ===
+
+static String compararProductos
+
+## ----------------------
+## ----- Versión 5 ------
+## ----------------------
+Mejoré la salida del programa y agregué mensajes intermedios
+
+Agregué el mensaje previo a la comparación
+
+Reforzé el uso de try / catch
+
+Mejoré la claridad de la salida
+
+=== Añadí: ===
+
+System.out.println("Mayor precio:");
+
+## ----------------------
+## ----- Versión 6 ------
+## ----------------------
+Añadí presentación de datos desde la clase Producto
+
+Creé el método mostrarProducto
+
+Imprimí los productos desde el objeto.
+
+Completé la estructura del programa
+
+=== Añadí: ===
+
+public void mostrarProducto()
+
+
+p1.mostrarProducto();
+
+p2.mostrarProducto();

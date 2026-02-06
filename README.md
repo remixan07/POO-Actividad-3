@@ -48,21 +48,31 @@ Producto p1 = new Producto();
 ## ----- Versión 3 ------
 ## ----------------------
 pasé los atributos a private
+
 Agregué setters y getter
-Creé el método calcularPrecio e incorporé el impuesto.
+
+Creé el método calcularPrecio e incorporé el impuesto
+
 Dejé de hacer el cálculo en main
 
 === Añadí: ===
+
 public double calcularPrecio(double utilidad)
 
 === Modifiqué: ===
+
 double costo;
+
 === por: ===
+
 private double costo
 
 === y ===
+
 p1.costo
+
 === pot: ===
+
 p1.setCosto
 
 ## ----------------------

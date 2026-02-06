@@ -27,14 +27,21 @@ Almacené descripción y costo dentro del objeto
 Comparé los productos mediante sus atributos
 
 === Añadí: ===
+
 class Producto {
+
     String descripcion;
+    
     double costo;
+    
 }
 
 === Modifiqué: ===
+
 String d1;
+
 === por: ===
+
 Producto p1 = new Producto();
 
 ## ----------------------

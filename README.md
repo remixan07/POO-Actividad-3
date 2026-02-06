@@ -4,7 +4,9 @@
 ## ----- Versión 1 ------
 ## ----------------------
 Utilicé únicamente variables sueltas para manejar los datos de los productos
+
 No existe una clase que represente al producto ni métodos para el cálculo del precio
+
 Usé String y double para cada producto
 El cálculo del precio lo realizé directamente en main
 No se manejé impuesto real

@@ -10,7 +10,8 @@ No existe una clase que represente al producto ni métodos para el cálculo del 
 Usé String y double para cada producto
 
 El cálculo del precio lo realizé directamente en main
-No se manejé impuesto real
+
+No se manejó impuesto real
 
 ## ----------------------
 ## ----- Versión 2 ------

@@ -17,9 +17,13 @@ No se manejó impuesto real
 ## ----- Versión 2 ------
 ## ----------------------
 Apliqué orientación a objetos para mejorar organización y representar entidades reales
+
 Introduje "producto" como una variable
+
 Creé la clase "producto"
+
 Almacené descripción y costo dentro del objeto
+
 Comparé los productos mediante sus atributos
 
 === Añadí: ===

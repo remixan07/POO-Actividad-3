@@ -32,6 +32,10 @@ class Producto {
         return descripcion;
     }
 
+    public void mostrarProducto() {
+        System.out.println(descripcion + " | " + codigo + " | " + tipo + " | " + costo);
+    }
+
     public double calcularPrecio(double utilidad) {
 
         double base = costo + (costo * utilidad);
@@ -41,12 +45,12 @@ class Producto {
 
 public class POO_Actividad_3 {
 
-    static String compararProductos(Producto p, Producto q) {
+    static String compararProductos(Producto a, Producto b) {
 
-        if (p.calcularPrecio(.20) > q.calcularPrecio(.20)) {
-            return p.getDescripcion();
+        if (a.calcularPrecio(.20) > b.calcularPrecio(.20)) {
+            return a.getDescripcion();
         } else {
-            return q.getDescripcion();
+            return b.getDescripcion();
         }
     }
 
@@ -81,6 +85,10 @@ public class POO_Actividad_3 {
 
         p2.setImpuesto(.16);
 
+        p1.mostrarProducto();
+        p2.mostrarProducto();
+
+        System.out.println("Mayor precio:");
         System.out.println(compararProductos(p1, p2));
 
         sc.close();
